@@ -1,12 +1,13 @@
 
-import './App.css'
+import style from './App.module.css'
+import Navbar from './components/NavBar/Navbar'
 
 function App() {
 
   return (
-    <>
-     Hello World
-    </>
+    <div className={style.App}>
+     <Navbar />
+    </div>
   )
 }
 
