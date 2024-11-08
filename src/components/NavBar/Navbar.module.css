@@ -1,6 +1,3 @@
-@import "../../var.css";
-
-
 .navbar {
     position: relative;
     display: flex;
@@ -52,6 +49,7 @@
     .menuBtn {
         display: block; 
         cursor: pointer;
+        z-index: 3;
     }
 
     .menu {
@@ -78,7 +76,7 @@
 
     .menuOpen {
         display: flex;
+        margin-top: 100%;
         z-index: 1;
     }
 }
-
