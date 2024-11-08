@@ -4,19 +4,32 @@ import styles from './Navbar.module.css'
 import {getImageUrl} from '../../utils';
 
 const Navbar = () => {
-
+ 
+     const [showMenu, setShowMenu] = useState(false);
      
   return (
     <nav className={styles.navbar}>
-        <a className={styles.title} href="/">Porfolio</a>
-        <img className={styles.btn} src={getImageUrl('nav/menuIcon.png')} alt="menu-button" />
+        <a className={styles.title} href="/">
+            BirukTafese
+        </a>
        
         <div className={styles.menu} >
-            <ul className={styles.menuItems}>
+        <img 
+
+        
+        className={styles.menuBtn} 
+        src={showMenu ? getImageUrl('nav/closeIcon.png'):  getImageUrl('nav/menuIcon.png')} 
+        alt="menu-button"
+        onClick={() => setShowMenu(!showMenu)}
+         />
+
+            <ul 
+            className={`${styles.menuItems} ${showMenu && styles.menuOpen}`} 
+            onClick={()=> setShowMenu(false)}>
                <li><a href='#About'>About</a></li>
                 <li><a href='#skills'>Skills</a></li>
                <li><a href='#projects'>Projects</a></li>
-               <li><a href='#experience'>Expiernce</a></li>
+               <li><a href='#experience'>Experience</a></li>
                 <li><a href='#education'>Education</a></li>
                <li><a href='#contact'>Contact me</a></li>
              </ul>
