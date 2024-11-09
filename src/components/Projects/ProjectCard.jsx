@@ -1,23 +1,23 @@
 import PropTypes from 'prop-types';
 import { getImageUrl } from '../../utils';
+import styles from './ProjectCard.module.css';
 
  const ProjectCard = ({ project: { title, imageSrc, description, skills, demo, source } }) => {
   return (
-    <div>
-      <div>
-        <img src={getImageUrl(imageSrc)} alt={`${title} Logo`} />
-        <h3>{title}</h3>
-        <p>{description}</p>
-        <ul>
-          {skills.map((skill, index) => (
-            <li key={index}>{skill}</li>
+    <div className={styles.container} id="projects">
+        <img className={styles.image} src={getImageUrl(imageSrc)} alt={`${title} Logo`} />
+        <h3 className={styles.title}>{title}</h3>
+        <p className={styles.description}>{description}</p>
+        <ul className={styles.skills}>
+          {skills.map((skill, index) =>
+           (
+             <li key={index}  className={styles.skill}>{skill}</li>
           ))}
         </ul>
-        <div>
-          <a href={demo} target="_blank" rel="noreferrer">Demo</a>
-          <a href={source} target="_blank" rel="noreferrer">Source</a>
+        <div className={styles.links}>
+          <a className={styles.link} href={demo} target="_blank" rel="noreferrer">Demo</a>
+          <a className={styles.link} href={source} target="_blank" rel="noreferrer">Source</a>
         </div>
-      </div>
     </div>
   );
 };

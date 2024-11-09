@@ -1,12 +1,34 @@
 import { getImageUrl } from "../../utils"
 import styles from './Hero.module.css'
+import { TypeAnimation } from 'react-type-animation'
 
 const Hero = () => {
   return (
     <section className={styles.container}>
         <div className={styles.content}>
-            <h1 className={styles.title}>Hi, I`m Biruk</h1>
-            <p className={styles.description}>I`m fullstack web and mobile application developer with experience in React, Django and Flutter. Reach out me for more</p>
+            <h1 className={styles.title}>Hi, I`m Biruk Tafese</h1>
+            <p className={styles.description}> 
+              <div>
+     <TypeAnimation
+    preRenderFirstString={true}
+    sequence={[
+      500,
+      'FRONTEND DEVELOPER', 
+      1000,
+      'BACKEND DEVELOPER',
+      1000,
+      'FULLSTACK DEVELOPER',
+      1000,
+      'MOBILE DEVELOPER',
+      500,
+    ]}
+    speed={50}
+    className={styles.multicolortext}
+     repeat={Infinity}
+     />
+          </div>
+             with experience in React, Django and Flutter. Reach out me for more
+            </p>
             
             <a 
                 target="blank"  

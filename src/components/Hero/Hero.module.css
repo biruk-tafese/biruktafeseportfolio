@@ -31,7 +31,17 @@
     background: linear-gradient(90deg, rgba(255,255,255,1) 70%, rgba(255,255,255,0) 120%);
     -webkit-background-clip: text;
     background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.multicolortext {
+    font-size: 50px;
+    background: linear-gradient(to left, rgb(196, 190, 255), indigo, blue, green, rgb(102, 102, 7), orange, rgb(9, 79, 34));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 27px;
 }
 
 .description {
