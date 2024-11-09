@@ -7,8 +7,18 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
+    <>
+    <ul className= {styles.top}>
+      <li>+25164377216</li>
+      <li>cstafesebiruk23@gmail.com</li>
+      <li>www.github.com/biruk-tafese</li>
+    </ul>
     <nav className={styles.navbar}>
-      <a className={styles.title} href="/">Portfolio</a>
+      <a className={styles.title} href="/">
+       {"<"}
+        <img  className={styles.logo} src={getImageUrl("hero/myImage.png")} alt="logo" />
+        {"/>"}
+      </a>
       
       <div className={styles.menu}>
         <img 
@@ -22,13 +32,14 @@ const Navbar = () => {
           className={`${styles.menuItems} ${showMenu && styles.menuOpen}`} 
           onClick={() => setShowMenu(false)}
         >
-          <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact me</a></li>
         </ul>
       </div>
     </nav>
+    </>
   );
 };
 

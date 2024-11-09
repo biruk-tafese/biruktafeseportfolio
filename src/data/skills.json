@@ -1,11 +1,11 @@
 [
   {
-    "title": "HTML",
-    "imageSrc": "skills/html.png"
+    "title": "Flutter",
+    "imageSrc": "skills/flutter.png"
   },
   {
-    "title": "CSS",
-    "imageSrc": "skills/css.png"
+    "title": "react native",
+    "imageSrc": "skills/reactnative.png"
   },
   {
     "title": "React",
@@ -16,15 +16,19 @@
     "imageSrc": "skills/node.png"
   },
   {
-    "title": "GraphQL",
-    "imageSrc": "skills/graphql.png"
+    "title": "REST API",
+    "imageSrc": "skills/restAPI.png"
   },
   {
     "title": "MongoDB",
     "imageSrc": "skills/mongodb.png"
   },
   {
-    "title": "Figma",
-    "imageSrc": "skills/figma.png"
+    "title": "FastAPI",
+    "imageSrc": "skills/fastAPI.png"
+  },
+  {
+    "title": "github",
+    "imageSrc": "skills/github.png"
   }
 ]

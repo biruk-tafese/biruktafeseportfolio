@@ -12,14 +12,18 @@ const Hero = () => {
      <TypeAnimation
     preRenderFirstString={true}
     sequence={[
-      500,
-      'FRONTEND DEVELOPER', 
       1000,
-      'BACKEND DEVELOPER',
+      'I AM',
+      500,
+      'FRONTEND DEVELOPER ,', 
+      1000,
+      'BACKEND DEVELOPER, ',
       1000,
       'FULLSTACK DEVELOPER',
       1000,
-      'MOBILE DEVELOPER',
+      'AND',
+      500,
+      'MOBILE APPLICATION DEVELOPER',
       500,
     ]}
     speed={50}
@@ -27,17 +31,17 @@ const Hero = () => {
      repeat={Infinity}
      />
           </div>
-             with experience in React, Django and Flutter. Reach out me for more
+             with experience in MERN STACK, Django as well as  Flutter. Reach out me for more
             </p>
             
             <a 
                 target="blank"  
                 href="mailto:cstafesebiruk23@gmail.com"
                 className={styles.contactBtn}
-                >Contact Me</a>
+                >Hire Me</a>
         </div>
         <img 
-           src={getImageUrl('hero/heroImage.png')}
+           src={getImageUrl('hero/coderImage.png')}
            alt="hero image of me" 
            className={styles.heroImg}
 

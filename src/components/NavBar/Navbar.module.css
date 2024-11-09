@@ -1,13 +1,33 @@
+
+.top {
+    position:relative;
+    background-color: black;
+    color: var(--color-text);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.top li {
+    list-style: none;
+    margin: 8px 0px;
+}
+
 .navbar {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 61px;
     z-index: 2;
     margin: 0 10px;
 }
 
+.logo {
+    width: 15%;
+    height: 60%;
+
+}
 
 
 .title {
@@ -19,6 +39,7 @@
 
 .menu {
   display: flex;
+ 
 }
 
 
@@ -27,6 +48,7 @@
   display: flex;
   gap: 47px;
   list-style-type: none;
+  
 }
 
 .menuItems a {
@@ -37,6 +59,7 @@
 
 .menuItems a:hover {
     color: var(--color-primary);
+    transition: .7s;
 }
 
 
@@ -46,6 +69,16 @@
 }
 
 @media screen and (max-width: 830px) {
+
+    .top {
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .top li {
+        margin-top: 0;
+       
+    }
     .navbar{
         flex-direction: column;
         align-items: flex-start;

@@ -39,15 +39,29 @@
     flex-wrap: wrap;
     gap: 37px;
 }
+
+
 .skillImageContainer {
     background-color: var(--color-secondary);
-    border-radius: 100%;
+    border-radius: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 120px;
     height: 120px;
+
 }
+
+.skill {
+    transition: .5s;
+    background-color: var(--color-secondary);
+    border-radius: 20%;
+    text-align: center;
+}
+.skill:hover {
+    border-radius: 20%;
+    box-shadow:0 2px 12px 0 rgba(124, 120, 120, 0.7);
+  }
 
 .skillImageContainer img {
     width: 75%;
